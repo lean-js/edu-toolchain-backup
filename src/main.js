@@ -1,9 +1,5 @@
 import './styles/app.css';
 
-const appTemplate = `
-  <header class="page">
-    <h1>todos</h1>
-  <header>
-`;
+import { App } from './app.component';
 
-document.querySelector('#app').innerHTML = appTemplate;
+document.querySelector('#app').innerHTML = App({ title: 'todos' });
